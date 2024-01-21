@@ -10,7 +10,7 @@ namespace EF6_Code_First_App
     public class SchoolContext : DbContext
     {
         public SchoolContext()
-            : base("name=StudentDBConnectionString") => _ = StudentsTable;
+            : base("name=StudentDbConnectionString") => _ = StudentsTable;
         public DbSet<Student> StudentsTable { get; set; }
             public DbSet<Grade> GradesTable { get; set; }
         public object Students { get; internal set; }
