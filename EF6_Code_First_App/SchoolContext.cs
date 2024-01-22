@@ -13,7 +13,7 @@ namespace EF6_Code_First_App
             : base("name=StudentDb") => _ = StudentsTable;
         public DbSet<Student> StudentsTable { get; set; }
         public DbSet<Grade> GradesTable { get; set; }
-        public object Students { get; internal set; }
+        //public object Students { get; internal set; }
         public object Student { get; internal set; }
 
     }
