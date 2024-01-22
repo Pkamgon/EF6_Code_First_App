@@ -17,10 +17,8 @@ namespace EF6_Code_First_App
         {
             using (var ctx = new SchoolContext())
             {
-                var stud = new Student() { StudentName ="Paul"};
-                //List<string> myList = new List<string>();
-                //myList.Add((string)Paul); // Correct
-                ctx.Add(stud);
+                var stud = new Student() { StudentName ="Paul" };
+                ctx.StudentsTable.Add(stud);
                 ctx.SaveChanges();
             }
         }
