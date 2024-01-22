@@ -12,7 +12,6 @@ namespace EF6_Code_First_App
         {
             [Key] 
             public int studentID { get; set; }
-            public string studentName { get; set; }
         public string StudentName { get; internal set; }
         public byte[] photo { get; set; }
             public decimal Height { get; set; }
